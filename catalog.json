@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "methods": [
+    {
+      "name": "crs-validation",
+      "title": "CRS Validation",
+      "description": "Detects, diagnoses and resolves coordinate reference system (CRS) inconsistencies in geospatial data: declared versus plausible CRS, coordinate ranges, axis order (lat/lon swaps), geographic versus projected coordinates, units, area of use, datum transformations, reprojection versus assigning a CRS, area and distance correctness, and documentation of every transformation. Use when layers do not line up, features appear in the wrong place, a file has no or a suspicious .prj/SRID, or areas and distances look wrong.",
+      "category": "Data",
+      "tags": [
+        "geospatial",
+        "crs",
+        "epsg",
+        "proj",
+        "gdal",
+        "postgis",
+        "reprojection"
+      ],
+      "path": "skills/crs-validation",
+      "version": "0.1.0",
+      "license": "MIT",
+      "maturity": "ready-for-review"
+    },
+    {
+      "name": "etl-pipeline-validation",
+      "title": "ETL Pipeline Validation",
+      "description": "Validates data pipelines between source, transformation and target with a repeatable evidence-based workflow: schema contracts, row-count and value reconciliation, nullability, uniqueness, duplicates, referential integrity, completeness, freshness, transformation accuracy, incremental loading, idempotency, late-arriving data and error handling, ending in a validation report. Use when testing a new or changed ETL/ELT job, investigating missing, duplicated or wrong data in a warehouse table, or defining acceptance checks for a pipeline release.",
+      "category": "Data",
+      "tags": [
+        "etl",
+        "data-pipelines",
+        "data-quality",
+        "reconciliation",
+        "incremental-loading",
+        "sql"
+      ],
+      "path": "skills/etl-pipeline-validation",
+      "version": "0.1.0",
+      "license": "MIT",
+      "maturity": "ready-for-review"
+    },
+    {
+      "name": "postgresql-query-triage",
+      "title": "PostgreSQL Query Triage",
+      "description": "Diagnoses PostgreSQL query performance problems with a repeatable, evidence-based workflow: workload context, latency versus throughput, EXPLAIN and EXPLAIN ANALYZE plans, estimate-versus-actual row errors, buffer usage, scans and joins, statistics, index opportunities, locks and safe before/after comparison. Use when a PostgreSQL query or endpoint is slow, a plan regressed, CPU or I/O is high, or someone proposes an index or configuration change and needs evidence.",
+      "category": "Data",
+      "tags": [
+        "postgresql",
+        "query-performance",
+        "explain",
+        "indexing",
+        "database"
+      ],
+      "path": "skills/postgresql-query-triage",
+      "version": "0.1.0",
+      "license": "MIT",
+      "maturity": "ready-for-review"
+    },
+    {
+      "name": "sentinel2-preprocessing",
+      "title": "Sentinel-2 Preprocessing",
+      "description": "Prepares Copernicus Sentinel-2 MSI imagery for reproducible environmental remote-sensing analysis: objective and AOI, L1C versus L2A selection, temporal selection, cloud and shadow screening and SCL limitations, processing baselines and reflectance offsets, band resolutions, resampling, spatial alignment, nodata and quality masks, spectral index readiness, reproducibility metadata and output validation. Use when building a Sentinel-2 time series, composite or index (NDVI, NDWI and similar), when values differ between dates or sources, or when documenting a preprocessing chain. Provider-neutral.",
+      "category": "Science",
+      "tags": [
+        "remote-sensing",
+        "sentinel-2",
+        "copernicus",
+        "earth-observation",
+        "cloud-masking",
+        "raster"
+      ],
+      "path": "skills/sentinel2-preprocessing",
+      "version": "0.1.0",
+      "license": "MIT",
+      "maturity": "ready-for-review"
+    },
+    {
+      "name": "spatial-data-quality",
+      "title": "Spatial Data Quality Assessment",
+      "description": "Assesses the quality and fitness for use of vector geospatial datasets (points, lines, polygons) with a reproducible workflow: metadata and provenance, geometry types, validity, empty geometries, CRS consistency, topology, duplicates, overlaps and gaps, attribute quality, geographic coverage and positional uncertainty, ending in a quality report with non-destructive repair options. Use when receiving, publishing or integrating a shapefile, GeoPackage, GeoJSON or PostGIS layer, or when spatial analysis results look wrong.",
+      "category": "Data",
+      "tags": [
+        "geospatial",
+        "data-quality",
+        "vector-data",
+        "topology",
+        "postgis",
+        "gdal"
+      ],
+      "path": "skills/spatial-data-quality",
+      "version": "0.1.0",
+      "license": "MIT",
+      "maturity": "ready-for-review"
+    }
+  ]
+}
